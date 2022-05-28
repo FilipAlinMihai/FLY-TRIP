@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="./CSS/front-style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autentificare</title>
+
+<script>
+function functia1()
+{
+	var a=document.getElementById("PUtilizator");
+	if(a.type==="password")
+		a.type="text";
+	else
+		a.type="password";
+}
+function functia2()
+{
+	var a=document.getElementById("PAdm");
+	if(a.type==="password")
+		a.type="text";
+	else
+		a.type="password";
+}
+</script>
+</head>
+<body>
+
+<div class="site_header">
+	<section class="header_content">
+    <div id="titlu">
+        <h1 class="page_title slide_f_left">Pagină de Autentificare</h1>    
+        <h2 class="site_title slide_2_left">Pentru Calatori</h2>
+		<h3 class="page_description slide_3_left">FlyTrip</h3>
+	</div>
+    <ul class="meniu" id="main_menu">
+        <li><a href="pornire.html">Pagina de Pornire</a></li>
+    </ul>
+	</section>
+</div>
+<div class="center">
+<form action="PHP/login.php" method="post" class="formular">
+<fieldset><legend>Autentificare</legend>
+	<p><label for="email"><span>Email:</span> <input type="text" name="email" value=""/></label></p>
+	<p><label for="parola"><span>Parola:</span> <input type="password" name="parola" value="" id="PUtilizator"/></label></p>
+	<p><label for="AratP"><span>Arată Parola</span><input type="checkbox" onclick="functia1()" name="AratP" /></label></p>
+	<p><input type="submit" value="Conectare" class="button"></p>
+	
+</fieldset>
+<fieldset><legend>Puteţi crea un cont de utilizator dacă nu aveţi unul </legend>
+<p><a href='crearecont.html' class="button">Creează Cont</a></p>
+</fieldset>
+</form>
+</div>
+<div class="footer">
+<div class="fbox half" id="date">
+<h2>Despre noi</h2>
+<ul>
+<li>Aici puteti cunoaste experientele traite de altii</li>
+<li>Va ajutam sa gasiti destinatia perfecta pentru urmatorrea vacanta </li>
+<li>Pentru noi parerea utilizatorului e cea mai importanta </li>
+</ul>
+</div>
+<div class="fbox half" id="date1">
+<h2>Date de contact</h2>
+<p><strong>E-mail:</strong> fly.trip@gmail.com<br/>
+<strong>Număr de telefon:</strong> 0734457383<br/>
+<strong>Adresa:</strong> Timisoara, Strada Unirii Nr 27</p>
+</div>
+</div><!-- end footer -->
+<a id="mergisus" class="button" href="#main_menu">&#8593;</a>
+</body>
+</html>

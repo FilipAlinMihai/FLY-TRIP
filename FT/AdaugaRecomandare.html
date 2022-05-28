@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="./CSS/front-style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina Recomandare</title>
+</head>
+<body>
+<div class="site_header">
+	<section class="header_content">
+    <div id="titlu">
+        <h1 class="page_title slide_f_left">Adauga Recomandare</h1>    
+        <h2 class="site_title slide_2_left"> » </h2>
+		<h3 class="page_description slide_3_left">Fly Trip</h3>
+	</div>
+    <ul class="meniu" id="main_menu">
+        <li><a href="PA.html">Prima Pagină</a></li>
+        
+        
+    </ul>
+	</section>
+</div>
+
+<div class="center">
+<section >
+<p style='font-size:130%'></p>
+<form action="PHP/RecomandareNoua.php" method="post" class="formular" enctype="multipart/form-data" id="posteaza">
+<h2>Adauga o recomandare acum</h2>
+<fieldset><legend>Descriere obiectiv</legend>
+<textarea rows="7" cols="65" name="descriere" form="posteaza" id="desc">Descriere aici...</textarea>
+</fieldset>
+<fieldset><legend>Detalii obiectiv</legend>
+<p><label for="locatie"><span>Obiectiv</span><input type="text" name="locatie" value="" placeholder="Nume obiectiv" /></label></p>
+<p><label for="confirmaparola"><span>Confirmare Parola</span><input type="text" name="confirmaparola" value=""/></label></p>
+<p><label for="imagine"><span>Imagine 1</span><input type="file" name="imagine" value=""/></label></p>
+<p><label for="imagine2"><span>Imagine 2</span><input type="file" name="imagine2" value=""/></label></p>
+<p><label for="imagine3"><span>Imagine 3</span><input type="file" name="imagine3" value=""/></label></p>
+<p><input type="submit" value="Adauga locatie" class="button"></p>
+</fieldset>
+</form>
+</section>
+
+</div>
+<div class="footer">
+<div class="fbox half" id="date">
+<h2>Despre noi</h2>
+<ul>
+<li>Aici puteti cunoaste experientele traite de altii</li>
+<li>Va ajutam sa gasiti destinatia perfecta pentru urmatorrea vacanta </li>
+<li>Pentru noi parerea utilizatorului e cea mai importanta </li>
+</ul>
+</div>
+<div class="fbox half" id="date1">
+<h2>Date de contact</h2>
+<p><strong>E-mail:</strong> fly.trip@gmail.com<br/>
+<strong>Număr de telefon:</strong> 0734457383<br/>
+<strong>Adresa:</strong> Timisoara, Strada Unirii Nr 27</p>
+</div>
+</div><!-- end footer -->
+<a id="mergisus" class="button" href="#main_menu">&#8593;</a>
+</body>
+</html>

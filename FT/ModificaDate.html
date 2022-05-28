@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="./CSS/front-style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date Personale</title>
+</head>
+<body>
+<div class="site_header">
+	<section class="header_content">
+    <div id="titlu">
+        <h1 class="page_title slide_f_left">Modificare</h1>    
+        <h2 class="site_title slide_2_left">Date Personale</h2>
+		<h3 class="page_description slide_3_left">Fly Trip</h3>
+	</div>
+    <ul class="meniu" id="main_menu">
+        <li><a href="pornire.html">Pagina De Pornire</a></li>
+        <li><a href="#mod_nume">Schimbă nume</a></li>
+        <li><a href="#mod_email">Schimbă email</a></li>
+        <li><a href="#mod_parola">Schimbă parola</a></li>
+        <li><a href="PaginaP.html">Contul Meu</a></li>
+    </ul>
+	</section>
+</div>
+<div class="center">
+<section class="ascunde" id="mod_nume">
+<p style='font-size:130%'>Pentru modificarea numelui de utilizator completaţi formularul următor</p>
+<form action="PHP/ModificaNume.php" method="post" class="formular" enctype="multipart/form-data">
+<fieldset><legend>modificarea numelui de utilizator</legend>
+<p><label for="nume"><span>Nume Nou</span><input type="text" name="nume" value=""/></label></p>
+<p><label for="email"><span>Email</span><input type="text" name="email" value=""/></label></p>
+<p><label for="parola"><span>Parola</span><input type="text" name="parola" value=""/></label></p>
+<p><input type="submit" value="Modifica nume" class="button"></p>
+</fieldset>
+</form>
+</section>
+<section class="ascunde" id="mod_email">
+<p style='font-size:130%'>Pentru modificarea adresei de email completaţi formularul următor</p>
+<form action="PHP/ModificaEmail.php" method="post" class="formular" enctype="multipart/form-data">
+<fieldset><legend>modificarea adresei de e-mail</legend>
+<p><label for="emailnou"><span>Enail Nou</span><input type="text" name="emailnou" value=""/></label></p>
+<p><label for="email"><span>Email Curent</span><input type="text" name="email" value=""/></label></p>
+<p><label for="parola"><span>Parola</span><input type="text" name="parola" value=""/></label></p>
+<p><input type="submit" value="Modifica email" class="button"></p>
+</fieldset>
+</form>
+</section>
+<section class="ascunde" id="mod_parola">
+<p style='font-size:130%'>Pentru modificarea parolei completaţi formularul următor</p>
+<form action="PHP/ModificaParola.php" method="post" class="formular" enctype="multipart/form-data">
+<fieldset><legend>modifica parola</legend>
+<p><label for="parolanoua"><span>Parola Noua</span><input type="text" name="parolanoua" value=""/></label></p>
+<p><label for="confirmaparola"><span>Confirmare Parola</span><input type="text" name="confirmaparola" value=""/></label></p>
+<p><label for="email"><span>Email Curent</span><input type="text" name="email" value=""/></label></p>
+<p><label for="parola"><span>Parola  Curenta</span><input type="text" name="parola" value=""/></label></p>
+<p><input type="submit" value="Modifica parola" class="button"></p>
+</fieldset>
+</form>
+</section>
+</div>
+<div class="footer">
+<div class="fbox half" id="date">
+<h2>Despre noi</h2>
+<ul>
+<li>Aici puteti cunoaste experientele traite de altii</li>
+<li>Va ajutam sa gasiti destinatia perfecta pentru urmatorrea vacanta </li>
+<li>Pentru noi parerea utilizatorului e cea mai importanta </li>
+</ul>
+</div>
+<div class="fbox half" id="date1">
+<h2>Date de contact</h2>
+<p><strong>E-mail:</strong> fly.trip@gmail.com<br/>
+<strong>Număr de telefon:</strong> 0734457383<br/>
+<strong>Adresa:</strong> Timisoara, Strada Unirii Nr 27</p>
+</div>
+</div><!-- end footer -->
+<a id="mergisus" class="button" href="#main_menu">&#8593;</a>
+</body>
+</html>

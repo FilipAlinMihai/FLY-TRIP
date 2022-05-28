@@ -1,0 +1,12 @@
+[27-May-2022 07:57:11 Europe/Bucharest] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 26
+[27-May-2022 07:57:42 Europe/Bucharest] PHP Notice:  Undefined index: numeL in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 5
+[27-May-2022 07:57:42 Europe/Bucharest] PHP Notice:  Use of undefined constant page_title - assumed 'page_title' in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 8
+[27-May-2022 07:57:42 Europe/Bucharest] PHP Notice:  Use of undefined constant site_title - assumed 'site_title' in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 9
+[27-May-2022 07:57:42 Europe/Bucharest] PHP Notice:  Use of undefined constant page_description - assumed 'page_description' in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 10
+[27-May-2022 07:57:42 Europe/Bucharest] PHP Notice:  Undefined variable: id in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 10
+[27-May-2022 07:57:42 Europe/Bucharest] PHP Notice:  Use of undefined constant legaturi - assumed 'legaturi' in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 11
+[27-May-2022 07:57:42 Europe/Bucharest] PHP Notice:  Use of undefined constant nume - assumed 'nume' in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 13
+[27-May-2022 07:57:42 Europe/Bucharest] PHP Notice:  Use of undefined constant link_url - assumed 'link_url' in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 14
+[27-May-2022 07:57:42 Europe/Bucharest] PHP Notice:  Use of undefined constant nume - assumed 'nume' in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 17
+[27-May-2022 07:57:42 Europe/Bucharest] PHP Notice:  Use of undefined constant link_url - assumed 'link_url' in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 18
+[27-May-2022 07:57:42 Europe/Bucharest] PHP Catchable fatal error:  Argument 1 passed to str_contains() must be an instance of string, string given, called in /home/grigblog/code-test.wtw.ro/PHP/cautareLocatie1.php on line 38 and defined in /home/grigblog/code-test.wtw.ro/PHP/c_functions.php on line 180

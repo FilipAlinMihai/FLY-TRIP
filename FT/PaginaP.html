@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="./CSS/front-style.css">
+<title>Pagina Principala</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="site_header">
+	<section class="header_content">
+    <div id="titlu">
+        <h1 class="page_title">Pagina Principală</h1>
+    
+        <h2 class="site_title">Fly Trip</h2>
+	</div>
+    <ul class="meniu" id="main_menu">
+        <li><a href="pornire.html">Prima Pagină</a></li>
+        <li><a href="#m_postari">Postări</a></li>
+        <li><a href="#m_cont">Profilul meu</a></li>
+    </ul>
+	</section>
+</div>
+<div class="center">
+<ul class="meniu" id="m_postari">
+<li><a href="AdaugaPostare.html">Postare Noua</a></li>
+<li><a href="PHP/AfisarePostari.php">Afisare Postari Noi</a></li>
+<li><a href="PHP/PostariPropri.php">Postarile Mele</a></li>
+<li><a href="PHP/PostariApreciate.php">Cele mai apreciate</a></li>
+<li><a href="PHP/PostariComentate.php">Cele mai comentate</a></li>
+<li><a href="PHP/AfisareRecomandariC.php">Recomandari Administrator</a></li>
+</ul>
+<ul class="meniu" id="m_cont">
+<li><a href="ModificaDate.html">Datele Mele</a></li>
+<li><a href="PHP/AfisareCereri.php">Afisare Cerere de prietenie</a></li>
+<li><a href="PHP/AfisarePrieteni.php">Prietenii Mei</a></li>
+<li><a href="PHP/AfisareRecP.php">De la prieteni</a></li>
+</ul>
+</div>
+<div class="footer">
+<div class="fbox half" id="date">
+<form action="PHP/cautarePrieteni.php" method="post">
+<h2>Caută prieteni</h2>
+	<input type="text" name="numeP" value=""   placeholder="Introduceți un nume" />
+     <input type="submit" value="Căutare" class="button">
+    </form>
+</div>
+<div class="fbox half" id="date1">
+	<form action="PHP/cautareLocatie.php" method="post">
+	<h2>Caută un obiectiv</h2>
+		<input type="text" name="numeL" value="" placeholder="Introduceți un nume de obiectiv"/>
+		<input type="submit" value="Căutare" class="button"></td>
+    </form>
+</div>
+</div><!-- end footer -->
+<a id="mergisus" class="button" href="#main_menu">&#8593;</a>
+</body>
+</html>

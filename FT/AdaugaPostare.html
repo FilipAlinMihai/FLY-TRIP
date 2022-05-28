@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="./CSS/front-style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina Principala</title>
+</head>
+<body>
+<div class="site_header">
+	<section class="header_content">
+    <div id="titlu">
+        <h1 class="page_title slide_f_left">Adauga o postare acum</h1>    
+        <h2 class="site_title slide_2_left">Descrie experienta ta</h2>
+		<h3 class="page_description slide_3_left">Fly Trip</h3>
+	</div>
+    <ul class="meniu" id="main_menu">
+        <li><a href="pornire.html">Prima Pagină</a></li>
+        <li><a href="PaginaP.html">Profilul tău</a></li>
+    </ul>
+	</section>
+</div>
+
+<div class="center">
+<form action="PHP/PostareNoua.php" method="post" class="formular" enctype="multipart/form-data" id="posteaza">
+<fieldset><legend>Descrie experiența ta</legend>
+<textarea rows="7" cols="65" name="descriere" form="posteaza" id="desc">Descriere aici...</textarea>
+</fieldset>
+<fieldset><legend>Obiectiv</legend>
+<p><label for="locatie">Nume obiectiv: <input type="text" name="locatie" value=""/></label></p>
+<p><label for="tip">Tipul: <select name="tip" id="tip">
+      <option value="Recenzie">Recenzie</option>
+      <option value="Oferta">Oferta</option>
+    </select></label></p>
+<p><label for="imagine">Imagine 1<input type="file" name="imagine" /></label></p>
+<p><label for="imagine2">Imagine 2<input type="file" name="imagine2" /></label></p>
+<p><label for="imagine3">Imagine 3<input type="file" name="imagine3" /></label></p>
+<p><input type="submit" value="Adauga" class="button"></p>  </fieldset>
+</table>
+</form>
+</div>
+</body>
+</html>

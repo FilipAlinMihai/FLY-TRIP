@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="./CSS/front-style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crearea unui cont</title>
+</head>
+<body>
+<div class="site_header">
+	<section class="header_content">
+    <div id="titlu">
+        <h1 class="page_title slide_f_left">Fly Trip</h1>   
+        <h2 class="site_title slide_2_left">Deveniţi utlizator</h2>
+		<h3 class="page_description slide_3_left">Închirieri Auto</h3>
+	</div>
+    <ul class="meniu" id="main_menu">
+        <li><a href="pornire.html">Prima Pagină</a></li>
+        <li><a href="login.html">Autentificare Utilizator</a></li>
+        <li><a href="loginA.html">Autentificare Admin</a></li>
+    </ul>
+	</section>
+</div>
+
+<div class="center">
+		<form action="PHP/crearecont.php" method="post" class="formular" >
+			<fieldset><legend>Date de conectare</legend>
+				<p><label for="numeutilizator"><span>Nume de utilizator <span class="required">*</span></span><input type="text" class="input-field" name="numeutilizator" value="" /></label></p>
+				<p><label for="parola1"><span>Parola1 <span class="required">*</span></span><input type="password" name="parola1" value=""  placeholder="parola (între 5 și 9 car.)" /></label></p>
+				<p><label for="parola2"><span>Parola2 <span class="required">*</span></span><input type="password" name="parola2" value=""  placeholder="reintroduceți parola" /></label></p>
+				<p><label for="email"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="email" value=""  placeholder="un e-mail valid" /></label></p>
+				<p><label><span> </span><input type="submit" value="Trimite" class="button" /></label></p>
+			</fieldset>
+		</form>
+</div>
+<div class="footer">
+<div class="fbox half" id="date">
+<h2>Despre noi</h2>
+<ul>
+<li>Aici puteti cunoaste experientele traite de altii</li>
+<li>Va ajutam sa gasiti destinatia perfecta pentru urmatorrea vacanta </li>
+<li>Pentru noi parerea utilizatorului e cea mai importanta </li>
+</ul>
+</div>
+<div class="fbox half" id="date1">
+<h2>Date de contact</h2>
+<p><strong>E-mail:</strong> fly.trip@gmail.com<br/>
+<strong>Număr de telefon:</strong> 0734457383<br/>
+<strong>Adresa:</strong> Timisoara, Strada Unirii Nr 27</p>
+</div>
+</div><!-- end footer -->
+<a id="mergisus" class="button" href="#main_menu">&#8593;</a>
+</body>
+</html>

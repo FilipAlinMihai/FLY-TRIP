@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="./CSS/front-style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlyTrip</title>
+</head>
+<body>
+
+<script>
+var i=0;
+var imagini=[];
+var timp=5000;
+imagini[0]="imagini/Paris.jpg";
+imagini[1]="imagini/Londra.jpg";
+imagini[2]="imagini/Madrid.jpg";
+imagini[3]="imagini/Lisabona.jpg";
+imagini[4]="imagini/Napoli.jpg";
+imagini[5]="imagini/Miami.jpg";
+imagini[6]="imagini/Barcelona.jpg";
+imagini[7]="imagini/NewYork.jpg";
+
+function fun(){
+document.imgs.src=imagini[i];
+if(i<imagini.length-1){
+i++;
+}
+else
+{
+i=0;
+}
+setTimeout("fun()",timp);
+}
+window.onload=fun;
+</script>
+<body>
+<div class="site_header">
+	<section class="header_content">
+    <div id="titlu">
+        <h1 class="page_title slide_f_left">Calatoreste linistit</h1>    
+        <h2 class="site_title slide_2_left">Calatoreste fericit</h2>
+		<h3 class="page_description slide_3_left">Informează-te cu <span>Fly Trip</span></h3>
+	</div>
+    <ul class="meniu" id="main_menu">
+        <li><a href="crearecont.html">Creează Cont</a></li>
+        <li><a href="login.html">Autentificare Utilizator</a></li>
+        <li><a href="loginA.html">Autentificare Admin</a></li>
+    </ul>
+	</section>
+</div>
+<div class="center">
+<img class="slideshow" src="imagini/Paris.jpg" name="imgs" width="750" height="440"><br>
+<p>Potentiale locatii</p>
+</div>
+<div class="footer">
+<div class="fbox half" id="date">
+<h2>Despre noi</h2>
+<ul>
+<li>Aici puteti cunoaste experientele traite de altii</li>
+<li>Va ajutam sa gasiti destinatia perfecta pentru urmatorrea vacanta </li>
+<li>Pentru noi parerea utilizatorului e cea mai importanta </li>
+</ul>
+</div>
+<div class="fbox half" id="date1">
+<h2>Date de contact</h2>
+<p><strong>E-mail:</strong> fly.trip@gmail.com<br/>
+<strong>Număr de telefon:</strong> 0734457383<br/>
+<strong>Adresa:</strong> Timisoara, Strada Unirii Nr 27</p>
+</div>
+</div><!-- end footer -->
+<a id="mergisus" class="button" href="#main_menu">&#8593;</a>
+</body>
+</html>
